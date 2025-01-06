@@ -27,7 +27,7 @@ const AiUploader = () => {
       setProgress(0);
       setHindiMessage("");
 
-      const response = await axios.post("http://localhost:5000/upload", formData, {
+      const response = await axios.post("https://audtextbackend.onrender.com/upload", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

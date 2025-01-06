@@ -11,7 +11,7 @@ const Chatbot = () => {
       setMessages((prev) => [...prev, userMessage]);
 
       try {
-        const response = await axios.post('http://localhost:5000/chat', { message: input });
+        const response = await axios.post('https://audtextbackend.onrender.com/chat', { message: input });
         const botMessage = { sender: 'bot', text: response.data.botResponse };
         setMessages((prev) => [...prev, botMessage]);
       } catch (error) {

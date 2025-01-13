@@ -18,7 +18,7 @@ function App() {
         </Link>
 
         {/* Navigation Buttons */}
-        <div className="flex flex-wrap space-x-4 xs:flex-col xs:space-x-0 xs:space-y-4">
+        <div className="flex xs:flex-wrap space-x-4 xs:flex-col xs:space-x-0 xs:space-y-4">
   <button
     onClick={() => navigate("/aiuploader")}
     className="px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-400 transition"
